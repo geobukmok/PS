@@ -1,8 +1,7 @@
 # 자동 리뷰어 등록 설정
 addReviewers: true
 
-# 담당자는 생성자(author)로 자동 등록
-addAssignees: author
+addAssignees: false
 
 # 리뷰어 명단
 reviewers:
