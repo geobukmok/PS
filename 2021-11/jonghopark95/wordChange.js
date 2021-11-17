@@ -1,3 +1,5 @@
+// https://programmers.co.kr/learn/courses/30/lessons/43163
+
 const compareDifferentCharAmount = (str1, str2) => {
   let amount = 0;
 
