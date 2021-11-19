@@ -1,4 +1,4 @@
-let MAX = 1000;
+let H_MAX = 10000;
 
 function solve(citations, left, right) {
     if (left > right) {
@@ -25,5 +25,5 @@ function solve(citations, left, right) {
 }
 
 function solution(citations) {
-    return solve(citations, 0, MAX);
+    return solve(citations, 0, H_MAX);
 }
