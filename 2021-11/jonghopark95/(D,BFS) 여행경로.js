@@ -15,10 +15,10 @@ function solution(tickets) {
     const endAirports = rest.filter(([begin]) => begin === beginAirport);
 
     endAirports.forEach(([start, end]) => {
-      const findIdx = rest.findIndex(([b, e]) => b === start && e === end);
+      const target = rest.findIndex(([b, e]) => b === start && e === end);
       traverse(
         [...paths, end],
-        rest.filter((_, idx) => idx !== findIdx)
+        rest.filter((_, idx) => idx !== target)
       );
     });
   };
