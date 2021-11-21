@@ -3,8 +3,10 @@ function solution(n, computers) {
 	const visited = Array(n).fill(0);
 
 	for (const idx in computers) {
-		if (visited[idx] === 0) answer++;
-		dfs(idx);
+		if (visited[idx] === 0) {
+			answer++;
+			dfs(idx);
+		}
 	}
 
 	function dfs(n) {
