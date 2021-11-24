@@ -1,18 +1,18 @@
 function solution(participant, completion) {
-	const obj = new Map();
+  const obj = new Map();
 
-	participant.forEach((person) => {
-		const before = obj.get(person) || 0;
-		obj.set(person, before + 1);
-	});
+  participant.forEach((person) => {
+    const before = obj.get(person) || 0;
+    obj.set(person, before + 1);
+  });
 
-	completion.forEach((person) => {
-		obj.set(person, obj.get(person) - 1);
-	});
+  completion.forEach((person) => {
+    obj.set(person, obj.get(person) - 1);
+  });
 
-	for (const [key, value] of obj) {
-		if (value === 1) return key;
-	}
+  for (const [key, value] of obj) {
+    if (value === 1) return key;
+  }
 }
 
 // 정확성  테스트
@@ -29,24 +29,23 @@ function solution(participant, completion) {
 // 테스트 4 〉	통과 (35.72ms, 58.2MB)
 // 테스트 5 〉	통과 (30.34ms, 56.9MB)
 
-
 function solution(participant, completion) {
-	const obj = {};
-	
-	participant.forEach((person) => {
-			const before = obj[person] || 0;
-			obj[person] = before + 1;
-	})
-	
-	completion.forEach((person) => {
-			obj[person]--
-	})
-	
-	const keys = Object.keys(obj)
-	
-	for(let i = 0; i < keys.length; i++) {
-			if(obj[keys[i]] === 1) return keys[i]
-	}
+  const obj = {};
+
+  participant.forEach((person) => {
+    const before = obj[person] || 0;
+    obj[person] = before + 1;
+  });
+
+  completion.forEach((person) => {
+    obj[person]--;
+  });
+
+  const keys = Object.keys(obj);
+
+  for (let i = 0; i < keys.length; i++) {
+    if (obj[keys[i]] === 1) return keys[i];
+  }
 }
 
 // 채점을 시작합니다.
