@@ -18,6 +18,5 @@
 |       |                  |                  |                  | 
 | :------- | :----------------------:  | :----------------------:  | :----------------------:  |
 | 해시 | [완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576) | 완전탐색 | [모의고사](https://programmers.co.kr/learn/courses/30/lessons/42840) |
-| 해시 | [전화번호 목록](https://programmers.co.kr/learn/courses/30/lessons/42577) |  완전탐색 | [소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/42839) | 
+| 해시 | [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579) |  완전탐색 | [소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/42839) | 
 | 해시 | [위장](https://programmers.co.kr/learn/courses/30/lessons/42578) |  완전탐색 | [카펫](https://programmers.co.kr/learn/courses/30/lessons/42842) | 
-| 해시 | [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579) | 
