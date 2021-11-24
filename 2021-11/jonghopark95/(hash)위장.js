@@ -9,7 +9,7 @@ function solution(clothes) {
     if (!(kind in clothHash)) clothHash[kind] = clothAmountKey++;
 
     const key = clothHash[kind];
-    clothAmount[key] = clothAmount[key] ? clothAmount[key] + 1 : 1;
+    clothAmount[key] = (clothAmount[key] || 0) + 1;
   });
 
   return clothAmount.reduce((acc, curr) => acc * (curr + 1), 1) - 1;
