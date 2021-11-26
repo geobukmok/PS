@@ -6,9 +6,7 @@ function solution(brown, yellow) {
   for (let i = carpet; i >= Math.ceil(Math.sqrt(carpet)); i--) {
     if (carpet % i === 0) {
       const pair = [i, carpet / i];
-
-      const [x, y] = pair;
-      if ((x - 2) * (y - 2) === yellow) return pair;
+      if ((pair[0] - 2) * (pair[1] - 2) === yellow) return pair;
     }
   }
 }
