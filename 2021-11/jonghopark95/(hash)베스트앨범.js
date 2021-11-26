@@ -8,12 +8,7 @@ function solution(genres, plays) {
   genres.forEach((genre, idx) => {
     const playInfo = [idx, plays[idx]];
 
-    if (!genreMap.has(genre)) {
-      genreMap.set(genre, [playInfo]);
-    } else {
-      genreMap.set(genre, [...genreMap.get(genre), playInfo]);
-    }
-
+    genreMap.set(genre, [...(genreMap.get(genre) || []), playInfo])
     amountMap.set(genre, (amountMap.get(genre) || 0) + plays[idx]);
   });
 
