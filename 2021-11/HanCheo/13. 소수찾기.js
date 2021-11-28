@@ -1,8 +1,6 @@
 function solution(numbers) {
   let answer = 0;
-  const numArr = numbers
-    .split('')
-    .map(Number);
+  const numArr = numbers.split('');
   const checked = new Map();
 
   for (let i = 0; i < numArr.length; i++) {
