@@ -5,7 +5,7 @@ function solution(numbers) {
 
   for (let i = 0; i < numArr.length; i++) {
     const nextArr = [...numArr.slice(0, i), ...numArr.slice(i + 1)];
-    DFS(`${numArr[i]}`, nextArr);
+    DFS(numArr[i], nextArr);
   }
 
   function DFS(num, numsArr) {
@@ -15,7 +15,7 @@ function solution(numbers) {
 
     for (let i = 0; i < numsArr.length; i++) {
       const nextArr = [...numsArr.slice(0, i), ...numsArr.slice(i + 1)];
-      DFS(`${num}${numsArr[i]}`, nextArr);
+      DFS(num + numsArr[i], nextArr);
     }
   }
 
