@@ -18,10 +18,10 @@ function solution(number, k) {
     return b;
   });
 
-  while (k > 0) {
-    answer.pop();
-    k--;
-  }
+//   while (k > 0) {
+//     answer.pop();
+//     k--;
+//   }
 
-  return answer.join('');
+  return answer.slice(0, answer.length-k).join('');
 }
