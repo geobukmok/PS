@@ -3,14 +3,13 @@ function solution(number, k) {
   const answer = [numbers[0]];
 
   numbers.reduce((a, b) => {
-    if (a < b && k > 0) {
-      while (k > 0) {
-        if (answer[answer.length - 1] < b) {
-          answer.pop();
-          k--;
-        } else break;
-      }
+    while (a < b && k > 0) {
+      if (answer[answer.length - 1] < b) {
+        answer.pop();
+        k--;
+      } else break;
     }
+
     answer.push(b);
     return b;
   });
