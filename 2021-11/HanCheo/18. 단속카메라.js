@@ -6,7 +6,7 @@ function solution(routes) {
   let end = routes[0][1];
 
   routes.forEach(([x, y]) => {
-    if (x > end) answer++;
+    x > end && answer++;
     if (y < end || x > end) end = y;
   });
 
